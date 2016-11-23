@@ -2,6 +2,15 @@ class FrogBoard:
     def __init__(self, frogs):
         self.frogs = frogs
 
+    def __eq__(self, other):
+        return self.frogs == other.frogs
+
+    def __str__(self):
+        return self.frogs
+
+    def __repr__(self):
+        return self.__str__()
+
     def print_board(self):
         print(self.frogs)
 
